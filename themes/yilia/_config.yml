@@ -82,13 +82,6 @@ share_jia: false
 #1、多说
 duoshuo: false
 
-gitment:
-  on: false  # 启用gitment评论系统
-  owner: Lambda-yhj   # 你的github账号
-  repo: Lambda-yhj.github.io  # 评论issue保存的仓库，我选择保存在blog仓库，也可以新建一个仓库
-  client_id: b32919a5276d9a2e56e6   # client_id
-  client_secret: abe5f72279ce5a2b6458b4142e8a35b557f9a150 # client_secret
-
 #2、网易云跟帖
 wangyiyun: false
 
@@ -100,11 +93,20 @@ changyan_conf: false
 disqus: false
 
 #5、Gitment
-gitment_owner: false      #你的 GitHub ID
-gitment_repo: ''          #存储评论的 repo
-gitment_oauth:
-  client_id: ''           #client ID
-  client_secret: ''       #client secret
+# gitment_owner: Lambda-yhj      #你的 GitHub ID
+# gitment_repo: 'lambda-yhj.github.io'          #存储评论的 repo
+# gitment_oauth:
+#   client_id: '290f693d2cabb0f51739'           #client ID
+#   client_secret: '7913c97239f0d7b725a4f8fd3158cbdccaa1c5c1'       #client secret
+
+#gitalk settings
+gitalk:
+  enable: true #用来做启用判断可以不用
+  owner: 'Lambda-yhj' #Github 用户名,
+  repo: 'blog_comments' #储存评论issue的github仓库名
+  admin: 'Lambda-yhj' #Github 用户名,
+  clientID: '290f693d2cabb0f51739' #`Github Application clientID`
+  clientSecret: '7913c97239f0d7b725a4f8fd3158cbdccaa1c5c1' #`Github Application clientSecret`
 
 #6、live2d
 live2d:

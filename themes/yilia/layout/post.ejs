@@ -1,1 +1,3 @@
 <%- partial('_partial/article', {post: page, index: false}) %>
+<% if (theme.gitalk.enable) %>
+    <%- partial('_partial/comment') %>

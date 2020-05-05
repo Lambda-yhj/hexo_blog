@@ -4,7 +4,7 @@
 
 # Site
 title: Lambda的博客
-subtitle: 有趣的灵魂万里挑一
+subtitle: 年轻，年轻人的事情。
 description: 安徽建筑大学18年毕业,先就职于安徽玩美信息,求学上进,菜鸟一枚,希望有高人指点。 
 author: Lambda
 email: 1429190569@qq.com
@@ -12,14 +12,14 @@ keywords: "前端,js,javascript,node,后端,开发者,程序猿,极客,编程,�
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: //ylambday.com
-root: /
-permalink: :year/:month/:day/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-permalink_defaults:
+# url: //ylambday.com
+# root: /
+# permalink: :year/:month/:day/:title/
+# tag_dir: tags
+# archive_dir: archives
+# category_dir: categories
+# code_dir: downloads/code
+# permalink_defaults:
 
 # Directory
 source_dir: source
@@ -57,7 +57,7 @@ tag: 1
 ## Hexo uses Connect as a server
 ## You can customize the logger format as defined in
 ## http://www.senchalabs.org/connect/logger.html
-port: 3000
+port: 4000
 server_ip: localhost
 logger: false
 logger_format: dev
@@ -129,17 +129,17 @@ exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  repository: git@github.com:litten/litten.github.com.git
-#  branch: master
-
 deploy:
-  type: rsync
-  host: 122.51.180.254
-  user: root
-  root: /home/lambda
-  port: 22
+  type: git
+  repository: https://github.com/Lambda-yhj/lambda-yhj.github.io.git
+  branch: master
+
+# deploy:
+#   type: rsync
+#   host: 122.51.180.254
+#   user: root
+#   root: /home/lambda
+#   port: 22
 
 sitemap:
     path: sitemap.xml
